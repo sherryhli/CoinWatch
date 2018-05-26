@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coin Watch</title>
+    <link href="../static/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../static/custom.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<style>
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Coin Watch</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#data">View Database</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <img class="img-responsive center-block" src="../static/coinwatch.png" style="margin-bottom: -80px; margin-top: -30px;">
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+        <h1 style="text-align: center;">Coin Watch</h1>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <form style="text-align: center;" action="http://localhost:4449/result" method="post">
+                    <input type="text" name="coinname" placeholder="Enter name of coin..." />
+                    <br />
+                    <br />
+                    <input type="submit" class="btn btn-default" value="Search!" name="coinnamesearch" />
+                </form>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+</body>
+</html>

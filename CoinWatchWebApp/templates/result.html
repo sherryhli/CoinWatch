@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Results</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../static/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../static/custom.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <style>
+        table, th, td {
+            border-collapse: collapse;
+            margin-top: 75px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Coin Watch</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#data">View Database</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row" style="margin-left: 15px; margin-right: 15px;">
+            <table border=1 style="overflow-x: scroll;">
+                <tr>
+                    <th>Coin</th>
+                    <th>Team Introduction</th>
+                    <th>LinkedIn Profiles</th>
+                    <th>Terms and Conditions?</th>
+                    <th>Online Presence</th>
+                    <th>Partners</th>
+                    <th>Plagiarism</th>
+                    <th>Reviews</th>
+                    <th>Language</th>
+                    <th>GitHub Repo</th>
+                    <th>Roadmap</th>
+                    <th>Whitepaper Presence</th>
+                    <th>Whitepaper Length</th>
+                    <th>Whitepaper Detail</th>
+                    <th>Total Score</th>
+                </tr>
+                <tr>
+                    <td>{{name.upper()}}</td>
+                    <td>{{result[name]["team"]}}</td>
+                    <td>{{result[name]["linkedin"]}}</td>
+                    <td>{{result[name]["terms"]}}</td>
+                    <td>{{result[name]["online_presence"]}}</td>
+                    <td>{{result[name]["partners"]}}</td>
+                    <td>{{result[name]["plagiarism"]}}</td>
+                    <td>{{result[name]["review"]}}</td>
+                    <td>{{result[name]["language"]}}</td>
+                    <td>{{result[name]["github"]}}</td>
+                    <td>{{result[name]["roadmap"]}}</td>
+                    <td>{{result[name]["whitepaper"]}}</td>
+                    <td>{{result[name]["whitepaper_short"]}}</td>
+                    <td>{{result[name]["whitepaper_missing_info"]}}</td>
+                    <td>{{result[name]["score"]}}</td>
+                </tr>
+            </table>
+    </div>
+    <br />
+    <p style="text-align: center;">The total score is <strong>{{result[name]["score"]}}</strong>. Scroll to view detailed result.</p>
+</body>
+</html>

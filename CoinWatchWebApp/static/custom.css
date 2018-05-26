@@ -1,0 +1,125 @@
+body {
+	color: #000000; 
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2 {
+	font-weight: bold;
+    font-size: xx-large;
+}
+
+p {
+	font-size: 16px;
+	color: #263547;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+
+.btn-primary {
+	color: white;
+	background-color: transparent;
+	border-color: white;
+	border-width: 2px;
+	margin-bottom: 5px;
+}
+.btn-primary:hover {
+	color: #263547;
+	background-color: white;
+	border-color: #263547;
+}
+
+.navbar-inverse {
+	background: #263547;
+	border: 0;
+}
+.navbar-inverse .navbar-nav li a {
+	color: white;
+	font-size: 16px;
+}
+.navbar-inverse .navbar-nav li a:hover {
+	background: white;
+	color: #263547;
+}
+
+
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+	background: white;
+}
+
+
+.navbar img {
+	display: inline;
+	height: auto;
+	min-width: 40px;
+	width: 2%; 
+	margin-bottom: auto;
+	margin-top: -10px;
+	position: absolute;
+}
+
+
+.navbar-brand {
+	color: white;
+	font-weight: bold;
+}
+
+.fa {
+	padding-left: 3px;
+	padding-right: 3px;
+	color: white;
+}
+
+.img-circle {
+	max-height: 275px;
+}
+
+.col-md-6 {
+	margin-right: -45px;
+	margin-left: -30px;
+}
+
+.col-md-6 p {
+	text-align: left;
+}
+
+.col-md-6 h1 {
+	margin-top: 2px;
+}
+
+.contact-text {
+	text-align: center;
+}
+
+.contact-text .fa {
+	color: #263547;
+	font-size: 18px;
+}
+
+.col-md-4 h3{
+	text-align: center;
+	font-weight: bold;
+}
+
+.project-logo {
+	max-height: 275px;
+	max-width: 275px;
+}
+
+footer .fa {
+	color: #263547;
+	font-size: 20px;
+}
+
+footer p {
+	font-size: 12px;
+	text-align: center;
+}
+
+hr {
+	border-width: 1px;
+	border-color: #263547;
+}
